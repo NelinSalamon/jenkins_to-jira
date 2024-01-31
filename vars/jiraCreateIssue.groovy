@@ -1,5 +1,5 @@
 def call(Map config=[:]) {
-  def rawBody = libraryResource 'com/tamiltutera/api/jira/createIssue.json'
+  def rawBody = my_lib '/jira/createIssue.json'
   def binding = [
     key: "${config.key}",
     summary: "${config.summary}",
